@@ -1,0 +1,5 @@
+# Conv2DNets-Violinists
+Convolutional Neural Nets applied to data from violinists to classify between correct and incorrect notes (i.e. Tuned vs Mistuned)
+
+# Event-related Spectral Perturbations (ERSPs) processing
+Preprocessed EEG data were epoched from -1500ms to 2000ms time-locked to each auditory stimulus onset  without baseline correction. The ERSP was computed using Morlet wavelets with a linearly increasing number of cycles with increasing frequency. The wavelet used in each time window began with a 3-cycle wavelet (Hanning-tapered window) and ended with a 25-cycle wavelet. The ERSP was also computed with an output of 30 frequency bins from 3Hz to 50Hz and 200 output time samples (EEGlab’s function newtimef.m). Epochs from each condition containing improbable data 3 SD above or below the mean probability distribution of values across all epochs were excluded (EEGlab’s function pop_jointprob.m). For illustration purposes, ERSPs were baseline corrected in some figures, subtracting the mean ERSP of the whole epoch for each frequency bin separately. 
